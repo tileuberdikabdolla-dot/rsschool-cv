@@ -20,7 +20,13 @@ My main goal is to gain my first practical experience as a Junior Developer/Inte
 
 ## Code Examples
 
+```
+function fib(n) {
+    if(n <= 1) return n;
 
+    return fib(n - 1) + fib(n - 2);
+}
+```
 
 
 ## Work Experience
