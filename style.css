@@ -1,0 +1,285 @@
+ /* ---------- RESET & GLOBAL ---------- */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: #eef2f5;
+     /* soft background for outer area */
+     font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+     line-height: 1.5;
+     color: #1a2c3e;
+     padding: 2rem 1rem;
+ }
+
+ /* main container: centered horizontally, max-width, responsive */
+ .cv-container {
+     max-width: 1000px;
+     margin: 0 auto;
+     /* horizontal centering */
+     background: #ffffff;
+     border-radius: 28px;
+     box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: all 0.2s ease;
+ }
+
+ /* inner spacing */
+ .cv-inner {
+     padding: 2rem 2rem 1.8rem;
+ }
+
+ /* ---------- TYPOGRAPHY & SEMANTIC STYLES ---------- */
+ h1 {
+     font-size: 2.2rem;
+     font-weight: 700;
+     letter-spacing: -0.01em;
+     color: #0b3b4f;
+     margin-bottom: 0.25rem;
+     border-left: 5px solid #2c7da0;
+     padding-left: 1rem;
+ }
+
+ h2 {
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: #1f5068;
+     margin: 1.5rem 0 0.8rem 0;
+     padding-bottom: 0.3rem;
+     border-bottom: 3px solid #cbdbe2;
+     display: inline-block;
+ }
+
+ /* contact sub-headline (not h2 but a paragraph for role) */
+ .role-tag {
+     font-size: 1.1rem;
+     font-weight: 500;
+     color: #2c7da0;
+     margin-bottom: 1.2rem;
+     padding-left: 1rem;
+ }
+
+ /* ----- NAVIGATION (styled ul list) ----- */
+ .nav-links {
+     background: #f8fafc;
+     padding: 0.8rem 1.5rem;
+     border-radius: 60px;
+     margin: 1.2rem 0 1rem 0;
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.8rem;
+     justify-content: center;
+     border: 1px solid #e2edf2;
+ }
+
+ .nav-links li a {
+     text-decoration: none;
+     font-weight: 500;
+     color: #1f5068;
+     transition: 0.2s;
+     font-size: 1rem;
+     padding: 0.2rem 0;
+     border-bottom: 2px solid transparent;
+ }
+
+ .nav-links li a:hover {
+     border-bottom-color: #2c7da0;
+     color: #0a4b62;
+ }
+
+ /* Photo + intro flex row */
+ .profile-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     align-items: center;
+     margin: 1.2rem 0 1.8rem 0;
+     background: #fefefe;
+ }
+
+ .avatar-area {
+     flex-shrink: 0;
+     text-align: center;
+ }
+
+ .avatar-img {
+     width: 140px;
+     height: 140px;
+     object-fit: cover;
+     /* no distortion, keeps proportions */
+     border-radius: 50%;
+     border: 4px solid #d9e9f0;
+     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.05);
+     background: #f0f4f8;
+ }
+
+ .intro-text {
+     flex: 1;
+ }
+
+ /* lists: skills, contact, projects, etc — consistent UL styling */
+ .styled-list {
+     list-style: none;
+     padding-left: 0;
+     margin: 0.5rem 0 1rem 0;
+ }
+
+ .styled-list li {
+     margin-bottom: 0.5rem;
+     padding-left: 1.4rem;
+     position: relative;
+ }
+
+ .styled-list li::before {
+     content: "▹";
+     position: absolute;
+     left: 0;
+     color: #2c7da0;
+     font-weight: 500;
+ }
+
+ /* contact specific list (additional for email/phone) */
+ .contact-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin: 0.5rem 0 1rem 0;
+     list-style: none;
+ }
+
+ .contact-list li {
+     background: #ecf7fc;
+     padding: 0.3rem 1rem;
+     border-radius: 40px;
+     font-size: 0.95rem;
+     font-weight: 500;
+ }
+
+ .contact-list li a {
+     text-decoration: none;
+     color: #1f5068;
+ }
+
+ .contact-list li a:hover {
+     text-decoration: underline;
+ }
+
+ /* code block styling */
+ pre {
+     background: #1e2a32;
+     color: #e3f0f5;
+     padding: 1rem;
+     border-radius: 18px;
+     overflow-x: auto;
+     font-family: 'Fira Code', 'Courier New', monospace;
+     font-size: 0.9rem;
+     margin: 0.8rem 0 1.2rem 0;
+     border-left: 5px solid #61afef;
+ }
+
+ code {
+     font-family: monospace;
+ }
+
+ /* projects list (links) */
+ .projects-list {
+     list-style: none;
+     margin: 0.5rem 0 1rem 0;
+ }
+
+ .projects-list li {
+     margin-bottom: 0.6rem;
+ }
+
+ .projects-list a {
+     color: #1f6e8c;
+     text-decoration: none;
+     font-weight: 500;
+     border-bottom: 1px dotted #b9d4e3;
+ }
+
+ .projects-list a:hover {
+     color: #0e4b64;
+     border-bottom: 1px solid #0e4b64;
+ }
+
+ /* education & english row */
+ .info-grid {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     margin: 0.5rem 0 1rem 0;
+     background: #f9fdfe;
+     padding: 0.8rem 1rem;
+     border-radius: 20px;
+ }
+
+ .info-item {
+     flex: 1;
+ }
+
+ .info-item strong {
+     color: #124e66;
+ }
+
+ footer {
+     margin-top: 2rem;
+     padding: 1rem 1.5rem;
+     background: #f4f9fc;
+     border-top: 1px solid #e0edf2;
+     text-align: center;
+     font-size: 0.85rem;
+     color: #2c6279;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 1.2rem;
+ }
+
+ footer a {
+     color: #1f6e8c;
+     text-decoration: none;
+     font-weight: 500;
+     margin: 0 0.2rem;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+ }
+
+ .course-logo {
+     font-weight: 600;
+     background: #ffffffb3;
+     padding: 0.2rem 0.6rem;
+     border-radius: 30px;
+ }
+
+ /* responsive: keeps centering and margins */
+ @media (max-width: 650px) {
+     .cv-inner {
+         padding: 1.5rem;
+     }
+
+     .nav-links {
+         gap: 1rem;
+         border-radius: 30px;
+     }
+
+     h1 {
+         font-size: 1.7rem;
+     }
+
+     .profile-row {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .avatar-img {
+         width: 110px;
+         height: 110px;
+     }
+ }
