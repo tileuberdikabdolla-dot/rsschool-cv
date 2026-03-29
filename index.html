@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- Links to CSS files can go here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cv-container">
+        <div class="cv-inner">
+            <!-- ========== HEADER with photo & name ========== -->
+            <header>
+                <div class="profile-row">
+                    <div class="avatar-area">
+                    <div class="intro-text">
+                        <h1>Tileuberdi Kabdolla</h1>
+                        <div class="role-tag">Junior Developer | HTML/CSS & JavaScript learner</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== NAVIGATION (nav element) ========== -->
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- ========== MAIN content ========== -->
+            <main>
+                <!-- self-introduction section (h2 + paragraph) -->
+                <section id="intro">
+                    <h2>Brief Self-Introduction</h2>
+                    <p>I'm a motivated and responsible junior developer. I'm currently actively learning programming
+                        and web development. I'm ready to learn quickly, complete assigned tasks, and grow in the IT
+                        field. I work well in a team, pay close attention to detail, and meet deadlines responsibly.
+                    </p>
+                    <p>My main goal is to gain my first practical experience as a Junior Developer/Intern and apply
+                        my acquired knowledge to real-world projects.</p>
+                </section>
+
+                <!-- Contact information (explicit, structured as list: ul) -->
+                <section id="contact">
+                    <h2>Contact Information</h2>
+                    <ul class="contact-list">
+                        <li>📞 Phone: <a href="tel:87085857096">+7 708 585 7096</a></li>
+                        <li>✉️ Email: <a href="mailto:tileuberdikabdolla@gmail.com">tileuberdikabdolla@gmail.com</a>
+                        </li>
+                        <li>📍 Location: Astana, Kazakhstan</li>
+                    </ul>
+                </section>
+
+                <!-- Skills list: formatted as ul list (unordered list) -->
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul class="styled-list">
+                        <li><strong>Programming Languages:</strong> Learning Python and JavaScript</li>
+                        <li><strong>Basics:</strong> HTML, CSS (semantic, responsive layouts)</li>
+                        <li><strong>Tools:</strong> Git (basics), VS Code, GitHub Pages</li>
+                        <li><strong>Methodologies:</strong> Learning algorithms & data structures fundamentals</li>
+                        <li><strong>Soft Skills:</strong> Quick learner, responsible, communication skills, teamwork
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Code example: added using characters and tags (pre+code), not an image -->
+                <section id="code">
+                    <h2>Code Example</h2>
+                    <p><em>Recursive Fibonacci function (JavaScript)</em></p>
+                    <pre><code>function fib(n) {
+    if(n <= 1) return n;
+
+    return fib(n - 1) + fib(n - 2);
+}
+
+// Example usage: fib(6) returns 8</code></pre>
+                </section>
+
+                <!-- Completed educational projects with links to source code (dummy but valid demo projects) -->
+                <section id="projects">
+                    <h2>Educational Projects</h2>
+                    <ul class="projects-list">
+                        <li>📁 <a href="#" target="_blank">Portfolio Website (HTML/CSS) - GitHub repo</a> —
+                            responsive layout, semantic markup</li>
+                        <li>📁 <a href="#" target="_blank">To-Do App (JavaScript basics) - source code</a> —
+                            interactive task manager with local storage</li>
+                        <li>📁 <a href="#" target="_blank">Python Data Analysis: Student Grade Calculator</a> —
+                            working with loops & functions</li>
+                    </ul>
+                    <p><small>*Links are demo placeholders; actual repositories available upon request.</small></p>
+                </section>
+
+                <!-- Education and English proficiency section -->
+                <section id="education">
+                    <h2>Education & Language</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>🎓 Education</strong><br>
+                            10th grade - Astana High School (currently studying)<br>
+                            Self-taught web development via RS School, freeCodeCamp, and online resources.
+                        </div>
+                        <div class="info-item">
+                            <strong>🇬🇧 English Proficiency</strong><br>
+                            B2 – Upper Intermediate. Confident reading/writing technical documentation,
+                            communication in IT context.
+                        </div>
+                    </div>
+                    <!-- additional note: work experience as requested, but extra info is fine -->
+                    <p><strong>Work Experience / Internship:</strong> Still looking for my first experience. Ready
+                        to intern or work in a junior position. Open to on-the-job training.</p>
+                </section>
+            </main>
+
+            <!-- ========== FOOTER: GitHub link, year, course logo + course link ========== -->
+            <footer>
+                <span>©️ 2025 Tileuberdi Kabdolla</span>
+                <span>|</span>
+                <a href="https://github.com/tileuberdi-cv" target="_blank" rel="noopener noreferrer">🐙 GitHub
+                    (author)</a>
+                <span>|</span>
+                <span class="course-logo">🎓 RS School</span>
+                <a href="https://rs.school/" target="_blank" rel="noopener noreferrer">Course link</a>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
